@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台鐵便當價格趨勢</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<form id="data-form">
+  <label for="startDate">開始日期:</label>
+  <input type="date" id="startDate" name="startDate">
+  <label for="endDate">結束日期:</label>
+  <input type="date" id="endDate" name="endDate">
+  <label for="bento">便當種類:</label>
+  <select id="bento" name="bento">
+    <option value="臺鐵排骨便當(經濟)">臺鐵排骨便當(經濟)</option>
+    <option value="古早味爌肉便當">古早味爌肉便當</option>
+    <option value="照燒雞丁便當">照燒雞丁便當</option>
+    <option value="臺鐵素食便當(白飯)">臺鐵素食便當(白飯)</option>
+    <option value="臺鐵素食便當(燉飯)">臺鐵素食便當(燉飯)</option>
+    <option value="臺鐵排骨便當(八角)">臺鐵排骨便當(八角)</option>
+    <option value="五行素便當">五行素便當</option>
+    <option value="迷迭香雞腿排便當">迷迭香雞腿排便當</option>
+    <option value="臺鐵雞腿便當(圓紙)">臺鐵雞腿便當(圓紙)</option>
+    <option value="臺鐵鯖魚便當(圓紙)">臺鐵鯖魚便當(圓紙)</option>
+    <option value="懷舊排骨菜飯(圓木)">懷舊排骨菜飯(圓木)</option>
+    <option value="客家紅麴雞便當">客家紅麴雞便當</option>
+    <option value="薑汁燒肉飯">薑汁燒肉飯</option>
+    <option value="芋香牛蒡飯">芋香牛蒡飯</option>
+  </select>
+  <button type="submit">提交</button>
+</form>
+<canvas id="myChart"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
